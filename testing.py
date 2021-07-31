@@ -21,7 +21,7 @@ from sklearn.model_selection import train_test_split
 
 
 #Reading the dataset
-df=pd.read_csv(r'C:\Users\utksh\Downloads\forestfires.csv')
+df=pd.read_csv('forestfires.csv')
 
 
 # In[3]:
