@@ -34,6 +34,7 @@ def performanceMeasures(model):
     y_pred = model.predict(X_test)
     print('Accuracy: {:.2f}%'.format(abs(score*100)))
     print('RMSE: {:.2f}'.format(np.sqrt(metrics.mean_squared_error(y_test, y_pred))))
+    print()
 
 
 # # Testing linear regression model
@@ -48,6 +49,7 @@ X, y = preprocessing(df, task="regression")
 
 
 linear_regression = supervised_method(X, y, task="regression")
+print("Performance of Linear Regression:")
 performanceMeasures(linear_regression)
 
 
@@ -63,6 +65,7 @@ X, y = preprocessing(df, task="classification")
 
 
 logistic_regression = supervised_method(X, y, task="classification")
+print("Performance of Logistic Regression:")
 performanceMeasures(logistic_regression)
 
 
